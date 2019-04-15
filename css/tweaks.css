@@ -97,6 +97,10 @@ div.skills-heading{
 
 
 .resume-section blockquote {
+<<<<<<< HEAD
     border-left: 4px solid #1b85b8;
+=======
+    border-left: 4px solid #125d80;
+>>>>>>> 77373c7ff5fe94ed4554de771264ece291414b2d
     padding-left: 1em;
 }
