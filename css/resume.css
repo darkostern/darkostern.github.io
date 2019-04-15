@@ -60,7 +60,7 @@ h2 {
 }
 
 .list-icons .list-inline-item i:hover {
-  color: #0d425c;
+  color: #125d80;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -147,7 +147,7 @@ a {
 }
 
 a:hover, a:focus, a:active {
-  color: #824027;
+  color: #0d425c;
 }
 
 img {
