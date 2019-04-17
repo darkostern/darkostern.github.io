@@ -208,11 +208,38 @@
 <div class="resume-item d-flex flex-column flex-md-row mb-5">
   <div class="publication-content mr-auto">
     <h3 class="mb-0"><a href="https://www.sciencedirect.com/science/article/pii/S1361841518305784">Integrating Spatial Configuration into Heatmap Regression Based CNNs for Landmark Localization</a></h3>
+    <div>Christian Payer, <b>Darko Štern</b>, Horst Bischof, Martin Urschler</div>
     <div><i>Medical Image Analysis (2019)</i><p></p></div>
     <div>In many medical image analysis applications, only a limited amount of training data is available due to the costs of image acquisition and the large manual annotation effort required from experts. Training recent state-of-the-art machine learning methods like convolutional neural networks (CNNs) from small datasets is a challenging task. In this work on anatomical landmark localization, we propose a CNN architecture that learns to split the localization task into two simpler sub-problems, reducing the overall need for large training datasets. Our fully convolutional SpatialConfiguration-Net (SCN) learns this simplification due to multiplying the heatmap predictions of its two components and by training the network in an end-to-end manner. Thus, the SCN dedicates one component to locally accurate but ambiguous candidate predictions, while the other component improves robustness to ambiguities by incorporating the spatial configuration of landmarks. In our extensive experimental evaluation, we show that the proposed SCN outperforms related methods in terms of landmark localization error on a variety of size-limited 2D and 3D landmark localization datasets, i.e., hand radiographs, lateral cephalograms, hand MRIs, and spine CTs.</div>
   </div>
   <div class="resume-date text-md-right">
     <img src="/img/Publications/imgPayer2019_MIA.jpg" style="max-width:250px;padding:5px;"/>
+  </div>
+</div>
+
+
+<div class="resume-item d-flex flex-column flex-md-row mb-5">
+  <div class="publication-content mr-auto">
+    <h3 class="mb-0"><a href="https://ieeexplore.ieee.org/abstract/document/8470073">Automatic Age Estimation and Majority Age Classification from Multi-Factorial MRI Data</a></h3>
+    <div><b>Darko Stern</b>, Christian Payer, Nicola Giuliani, Martin Urschler</div>
+    <div><i>IEEE Journal of Biomedical and Health Informatics (2018)</i><p></p></div>
+    <div>Age estimation from radiologic data is an important topic both in clinical medicine as well as in forensic applications, where it is used to assess unknown chronological age or to discriminate minors from adults. In this work, we propose an automatic multi-factorial age estimation method based on MRI data of hand, clavicle and teeth to extend the maximal age range from up to 19 years, as commonly used for age assessment based on hand bones, to up to 25 years, when combined with clavicle bones and wisdom teeth. Fusing age-relevant information from all three anatomical sites, our method utilizes a deep convolutional neural network that is trained on a dataset of 322 subjects in the age range between 13 and 25 years, to achieve a mean absolute prediction error in regressing chronological age of 1.01 ± 0.74 years. Furthermore, when used for majority age classification, we show that a classifier derived from thresholding our regression based predictor is better suited than a classifier directly trained with a classification loss, especially when taking into account that cases of minors being wrongly classified as adults need to be minimized. In conclusion, we overcome the limitations of the multi-factorial methods currently used in forensic practice, i.e., dependency on ionizing radiation, subjectivity in quantifying age-relevant information, and lack of an established approach to fuse this information from individual anatomical sites.</div>
+  </div>
+  <div class="resume-date text-md-right">
+    <img src="/img/Publications/imgStern2018_JBHI.jpg" style="max-width:250px;padding:5px;"/>
+  </div>
+</div>
+
+
+<div class="resume-item d-flex flex-column flex-md-row mb-5">
+  <div class="publication-content mr-auto">
+    <h3 class="mb-0"><a href="https://link.springer.com/chapter/10.1007/978-3-030-00129-2_9">Sparse-View CT Reconstruction Using Wasserstein GANs</a></h3>
+    <div>Franz Thaler, Kerstin Hammernik, Christian Payer, Martin Urschler, <b>Darko Štern</b></div>
+    <div><i>IEEE Journal of Biomedical and Health Informatics (2018)</i><p></p></div>
+    <div>We propose a 2D computed tomography (CT) slice image reconstruction method from a limited number of projection images using Wasserstein generative adversarial networks (wGAN). Our wGAN optimizes the 2D CT image reconstruction by utilizing an adversarial loss to improve the perceived image quality as well as an   𝐿1  content loss to enforce structural similarity to the target image. We evaluate our wGANs using different weight factors between the two loss functions and compare to a convolutional neural network (CNN) optimized on 𝐿1 and the Filtered Backprojection (FBP) method. The evaluation shows that the results generated by the machine learning based approaches are substantially better than those from the FBP method. In contrast to the blurrier looking images generated by the CNNs trained on 𝐿1, the wGANs results appear sharper and seem to contain more structural information. We show that a certain amount of projection data is needed to get a correct representation of the anatomical correspondences.</div>
+  </div>
+  <div class="resume-date text-md-right">
+    <img src="/img/Publications/architecture2.pdf" style="max-width:250px;padding:5px;"/>
   </div>
 </div>
 
