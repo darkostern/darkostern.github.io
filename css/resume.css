@@ -60,11 +60,7 @@ h2 {
 }
 
 .list-icons .list-inline-item i:hover {
-<<<<<<< HEAD
   color: #1b85b8;
-=======
-  color: #125d80;
->>>>>>> 77373c7ff5fe94ed4554de771264ece291414b2d
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -89,8 +85,8 @@ h2 {
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
+    max-width: 20rem;
+    max-height: 20rem;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {
@@ -151,11 +147,7 @@ a {
 }
 
 a:hover, a:focus, a:active {
-<<<<<<< HEAD
   color: #1b85b8;
-=======
-  color: #0d425c;
->>>>>>> 77373c7ff5fe94ed4554de771264ece291414b2d
 }
 
 img {
