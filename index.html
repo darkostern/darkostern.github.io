@@ -294,6 +294,78 @@
     <h2 class="mb-5">Publications</h2>
     <p><p>List of my publication can also be found at <a href="https://scholar.google.at/citations?user=6OBZccIAAAAJ&hl=en&oi=ao"> Google Scholar </a> and <a href="https://www.researchgate.net/profile/Darko_Stern3"> ReserchGate </a>. If you have any problems accessing our publications, feel free to contact me.</p></p>
     <div><p></p></div>
+
+    <div class="resume-item d-flex flex-column flex-md-row mb-5">
+      <div class="publication-content mr-auto">
+        <h3 class="mb-0"><a href="https://link.springer.com/chapter/10.1007/978-3-030-60365-6_5">Inferring the 3d standing spine posture from 2d radiographs</a></h3>
+        <div>Amirhossein Bayat, Anjany Sekuboyina, Johannes C Paetzold, Christian Payer, <b>Darko Štern</b>, Martin Urschler, Jan S Kirschke, Bjoern H Menze</div>
+        <div><i>International Conference on Medical Image Computing and Computer-Assisted Intervention - MICCAI (2020)</i><p></p></div>
+        <div>The treatment of degenerative spinal disorders requires an understanding of the individual spinal anatomy and curvature in 3D. An upright spinal pose (i.e. standing) under natural weight bearing is crucial for such bio-mechanical analysis. 3D volumetric imaging modalities (e.g. CT and MRI) are performed in patients lying down. On the other hand, radiographs are captured in an upright pose, but result in 2D projections. This work aims to integrate the two realms, i.e. it combines the upright spinal curvature from radiographs with the 3D vertebral shape from CT imaging for synthesizing an upright 3D model of spine, loaded naturally. Specifically, we propose a novel neural network architecture working vertebra-wise, termed TransVert, which takes orthogonal 2D radiographs and infers the spine’s 3D posture. We validate our architecture on digitally reconstructed radiographs, achieving a 3D reconstruction Dice of   95.52% , indicating an almost perfect 2D-to-3D domain translation. Deploying our model on clinical radiographs, we successfully synthesise full-3D, upright, patient-specific spine models for the first time.</div>
+      </div>
+      <div class="resume-date text-md-right">
+        <img src="/img/Publications/imgBayar2020_MICCAI.png"  style="max-width:250px;padding:5px;"/>
+      </div>
+    </div>
+
+    <div class="resume-item d-flex flex-column flex-md-row mb-5">
+      <div class="publication-content mr-auto">
+        <h3 class="mb-0"><a href="https://link.springer.com/chapter/10.1007/978-3-030-60365-6_5">Uncertainty Estimation in Landmark Localization Based on Gaussian Heatmaps</a></h3>
+        <div>Christian Payer, <b>Darko Štern</b>, Horst Bischof, Martin Urschler</div>
+        <div><i>Uncertainty for Safe Utilization of Machine Learning in Medical Imaging, and Graphs in Biomedical Image Analysis - UNSURE (2020)</i><p></p></div>
+        <div>In landmark localization, due to ambiguities in defining their exact position, landmark annotations may suffer from both large inter- and intra-observer variabilites, which result in uncertain annotations. Therefore, predicting a single coordinate for a landmark is not sufficient for modeling the distribution of possible landmark locations. We propose to learn the Gaussian covariances of target heatmaps, such that covariances for pointed heatmaps correspond to more certain landmarks and covariances for flat heatmaps to more uncertain or ambiguous landmarks. By fitting Gaussian functions to the predicted heatmaps, our method is able to obtain landmark location distributions, which model location uncertainties. We show on a dataset of left hand radiographs and on a dataset of lateral cephalograms that the predicted uncertainties correlate with the landmark error, as well as inter-observer variabilities.</div>
+      </div>
+      <div class="resume-date text-md-right">
+        <img src="/img/Publications/imgPayer2020_UNSURE.png"  style="max-width:250px;padding:5px;"/>
+      </div>
+    </div>
+
+    <div class="resume-item d-flex flex-column flex-md-row mb-5">
+      <div class="publication-content mr-auto">
+        <h3 class="mb-0"><a href="https://cpb-ap-se2.wpmucdn.com/blogs.auckland.ac.nz/dist/1/670/files/2020/06/2020PayerVISAPP.pdf">Coarse to Fine Vertebrae Localization and Segmentation with SpatialConfiguration-Net and U-Net</a></h3>
+        <div>Christian Payer, <b>Darko Štern</b>, Horst Bischof, Martin Urschler</div>
+        <div><i>International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications - VISIGRAPP (2020)</i><p></p></div>
+        <div>Localization and segmentation of vertebral bodies from spine CT volumes are crucial for pathological diagnosis, surgical planning, and postoperative assessment. However, fully automatic analysis of spine CT volumes is difficult due to the anatomical variation of pathologies, noise caused by screws and implants, and the large range of different field-of-views. We propose a fully automatic coarse to fine approach for vertebrae localization and segmentation based on fully convolutional CNNs. In a three-step approach, at first, a U-Net localizes the rough position of the spine. Then, the SpatialConfiguration-Net performs vertebrae localization and identification using heatmap regression. Finally, a U-Net performs binary segmentation of each identified vertebrae in a high resolution, before merging the individual predictions into the resulting multi-label vertebrae segmentation. The evaluation shows top performance of our approach, ranking first place and winning the MICCAI 2019 Large Scale Vertebrae Segmentation Challenge (VerSe 2019).</div>
+      </div>
+      <div class="resume-date text-md-right">
+        <img src="/img/Publications/imgPayer2020_VISAPP.png"  style="max-width:250px;padding:5px;"/>
+      </div>
+    </div>
+
+    <div class="resume-item d-flex flex-column flex-md-row mb-5">
+      <div class="publication-content mr-auto">
+        <h3 class="mb-0"><a href="https://arxiv.org/pdf/2002.10819.pdf">Variational Inference and Bayesian CNNs for Uncertainty Estimation in Multi-Factorial Bone Age Prediction</a></h3>
+        <div>Stefan Eggenreich, Christian Payer, Martin Urschler, <b>Darko Štern</b></div>
+        <div><i>Medical Imaging Meets NeurIPS - Med-NerIPS (2019)</i><p></p></div>
+        <div>Additionally to the extensive use in clinical medicine, biological age (BA) in legal medicine is used to assess unknown chronological age (CA) in applications where identification documents are not available. Automatic methods for age estimation proposed in the literature are predicting point estimates, which can be misleading without the quantification of predictive uncertainty. In our multi-factorial age estimation method from MRI data, we used the Variational Inference approach to estimate the uncertainty of a Bayesian CNN model. Distinguishing model uncertainty from data uncertainty, we interpreted data uncertainty as biological variation, i.e. the range of possible CA of subjects having the same BA.</div>
+      </div>
+      <div class="resume-date text-md-right">
+        <img src="/img/Publications/bayesian.png"  style="max-width:250px;padding:5px;"/>
+      </div>
+    </div>
+
+    <div class="resume-item d-flex flex-column flex-md-row mb-5">
+      <div class="publication-content mr-auto">
+        <h3 class="mb-0"><a href="https://ieeexplore.ieee.org/abstract/document/8961000">Evaluating Spatial Configuration Constrained CNNs for Localizing Facial and Body Pose Landmarks</a></h3>
+        <div>Christian Payer, <b>Darko Štern</b>, Martin Urschler</div>
+        <div><i>International Conference on Image and Vision Computing New Zealand - IVCNZ (2019)</i><p></p></div>
+        <div>Landmark localization is a widely used task required in medical image analysis and computer vision applications. Formulated in a heatmap regression framework, we have recently proposed a CNN architecture that learns on its own to split the localization task into two simpler sub-problems, dedicating one component to locally accurate but ambiguous predictions, while the other component improves robustness by incorporating the spatial configuration of landmarks to remove ambiguities. We learn this simplification in our SpatialConfiguration-Net (SCN) by multiplying the heatmap predictions of its two components and by training the network in and end-to-end manner, thus achieving regularization similar to e.g. a hand-crafted Markov Random Field model. While we have previously shown localization results solely on data from 2D and 3D medical imaging modalities, in this work our aim is to study the generalization capabilities of our SpatialConfiguration-Net to computer vision problems. Therefore, we evaluate our performance both in terms of accuracy and robustness on a facial alignment task, where we improve upon the state-of-the-art methods, as well as on a human body pose estimation task, where we demonstrate results in line with the recent state-of-the-art.</div>
+      </div>
+      <div class="resume-date text-md-right">
+        <img src="/img/Publications/imgPayer2019_IVCNZ.png"  style="max-width:250px;padding:5px;"/>
+      </div>
+    </div>
+
+    <div class="resume-item d-flex flex-column flex-md-row mb-5">
+      <div class="publication-content mr-auto">
+        <h3 class="mb-0"><a href="https://www.sciencedirect.com/science/article/pii/S1361841519300751">Evaluation of algorithms for Multi-Modality Whole Heart Segmentation: An open-access grand challenge</a></h3>
+        <div>Xiahai Zhuanga, Lei Li, Christian Payer, <b>Darko Štern</b>, Martin Urschler, Mattias P. Heinrich et al.</div>
+        <div><i>Medical Image Analysis (2019)</i><p></p></div>
+        <div>Knowledge of whole heart anatomy is a prerequisite for many clinical applications. Whole heart segmentation (WHS), which delineates substructures of the heart, can be very valuable for modeling and analysis of the anatomy and functions of the heart. However, automating this segmentation can be challenging due to the large variation of the heart shape, and different image qualities of the clinical data. To achieve this goal, an initial set of training data is generally needed for constructing priors or for training. Furthermore, it is difficult to perform comparisons between different methods, largely due to differences in the datasets and evaluation metrics used. This manuscript presents the methodologies and evaluation results for the WHS algorithms selected from the submissions to the Multi-Modality Whole Heart Segmentation (MM-WHS) challenge, in conjunction with MICCAI 2017. The challenge provided 120 three-dimensional cardiac images covering the whole heart, including 60 CT and 60 MRI volumes, all acquired in clinical environments with manual delineation. Ten algorithms for CT data and eleven algorithms for MRI data, submitted from twelve groups, have been evaluated. The results showed that the performance of CT WHS was generally better than that of MRI WHS. The segmentation of the substructures for different categories of patients could present different levels of challenge due to the difference in imaging and variations of heart shapes. The deep learning (DL)-based methods demonstrated great potential, though several of them reported poor results in the blinded evaluation. Their performance could vary greatly across different network structures and training strategies. The conventional algorithms, mainly based on multi-atlas segmentation, demonstrated good performance, though the accuracy and computational efficiency could be limited. The challenge, including provision of the annotated training data and the blinded evaluation for submitted algorithms on the test data, continues as an ongoing benchmarking resource via its homepage (www.sdspeople.fudan.edu.cn/zhuangxiahai/0/mmwhs/).</div>
+      </div>
+      <div class="resume-date text-md-right">
+        <img src="/img/Publications/heart.png"  style="max-width:250px;padding:5px;"/>
+      </div>
+    </div>
   
     <div class="resume-item d-flex flex-column flex-md-row mb-5">
       <div class="publication-content mr-auto">
