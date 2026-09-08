@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Master Thesis Proposal</title>
+
+<style>
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #ececec;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    background: white;
+    padding: 13mm 16mm 13mm 16mm;
+  }
+
+ /* ---------- HEADER ---------- */
+
+.header {
+  display: grid;
+  grid-template-columns: 60mm 1fr 60mm;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 7mm;
+}
+
+/* common logo container */
+.logo-box {
+  height: 22mm;
+  display: flex;
+  align-items: center;
+}
+
+/* LEFT: TU Graz + IVC */
+.logo-box.left {
+  justify-content: flex-start;
+  gap: 4mm;
+  padding-left: 4mm;
+}
+
+/* TU Graz */
+.logo-box.left img:first-child {
+  height: 13mm;
+  width: auto;
+  max-width: 29mm;
+  object-fit: contain;
+}
+
+/* IVC */
+.logo-box.left img:last-child {
+  height: 15mm;
+  width: auto;
+  max-width: 27mm;
+  object-fit: contain;
+}
+
+/* CENTER */
+.institution {
+  text-align: center;
+  font-size: 10.5pt;
+  line-height: 1.25;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+/* RIGHT: Med Uni Graz */
+.logo-box.right {
+  justify-content: flex-end;
+  padding-right: 5mm;
+}
+
+.logo-box.right img {
+  height: 15mm;
+  width: auto;
+  max-width: 34mm;
+  object-fit: contain;
+}
+  /* ---------- TITLE ---------- */
+
+  .title {
+    text-align: center;
+    color: #00784a;
+    font-size: 21pt;
+    line-height: 1.08;
+    font-weight: 700;
+    margin: 1mm 0 3mm 0;
+  }
+
+  .subtitle {
+    text-align: center;
+    color: #00784a;
+    font-size: 15pt;
+    font-weight: 700;
+    margin-bottom: 7mm;
+  }
+
+  /* ---------- OPTIONAL CENTRAL FIGURE / CONCEPT ---------- */
+
+  .concept {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .concept-figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .concept-img {
+    width: 80%;
+    max-width: none;
+    height: auto;
+  }
+
+  /* ---------- CONTENT ---------- */
+
+  .section {
+    margin-top: 3.5mm;
+  }
+
+  .section-title {
+    margin: 0 0 1.5mm 0;
+    color: #00784a;
+    font-size: 14pt;
+    line-height: 1.1;
+    font-weight: 700;
+  }
+
+  .section p {
+    font-size: 10.8pt;
+    line-height: 1.25;
+    margin: 0;
+    text-align: justify;
+  }
+
+  .section ul {
+    margin: 1.5mm 0 0 5.5mm;
+    padding-left: 5mm;
+  }
+
+  .section li {
+    font-size: 10.6pt;
+    line-height: 1.23;
+    margin: 0 0 2.1mm 0;
+    padding-left: 1mm;
+  }
+
+  .bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 52mm;
+    gap: 10mm;
+    margin-top: 4mm;
+    align-items: start;
+  }
+
+  .contact p {
+    text-align: left;
+    line-height: 1.22;
+    margin-bottom: 2.7mm;
+  }
+
+  .contact strong {
+    font-size: 10.8pt;
+  }
+
+  .contact span {
+    font-size: 10pt;
+  }
+
+  /* ---------- PRINT ---------- */
+
+  @media print {
+    html, body {
+      background: white;
+    }
+
+    .page {
+      margin: 0;
+      width: 210mm;
+      min-height: 297mm;
+      box-shadow: none;
+    }
+
+    .logo-placeholder,
+    .figure-placeholder {
+      border-color: #bbb;
+    }
+  }
+</style>
+</head>
+
+<body>
+<div class="page">
+
+  <!-- ============================================================
+       HEADER
+       Replace the placeholder DIVs with <img src="..."> if desired.
+       Example:
+       <img src="tu-graz-logo.png" alt="TU Graz">
+       ============================================================ -->
+
+  <header class="header">
+    <div class="logo-box left">
+      <img
+        src="/img/Logos/TU_Graz.svg"
+        alt="TU Graz logo"
+      >
+      <!-- <img
+        src="/img/Logos/IVC.png"
+        alt="Institute of Visual Computing (IVC) logo"
+      > -->
+      
+    </div>
+
+    <div class="institution">
+      Graz University of Technology <br>
+      <strong>and</strong> <br>
+      Medical University of Graz
+    </div>
+
+    <div class="logo-box right">
+     
+      <img
+        src="/img/Logos/MedUniGraz.png"
+        alt="Medical University of Graz logo"
+      >
+    </div>
+  </header>
+
+  <!-- ======================== REPLACE TITLE ======================== -->
+  <h1 class="title">Agentic AI for Multimodal Medical Data Analysis</h1>
+
+  <div class="subtitle">Master Project/Thesis</div>
+
+
+  <section class="concept">
+    <div class="concept-figure">
+      <img src="/img/Projects/MedicalAgent.png" alt="Thesis concept" class="concept-img">
+    </div>
+  </section>
+
+  <!-- ====================== REPLACE OBJECTIVE ====================== -->
+  <section class="section">
+    <h2 class="section-title">Objective:</h2>
+    <p>
+      Recent advances in multimodal foundation models enable the joint analysis of medical images, clinical text, laboratory values, signals, and other patient information. However, directly processing all available data with a single model can limit reliability and the ability to perform specialized quantitative analyses.
+    </p>
+    <p>
+      The objective of this thesis is to investigate an agentic AI framework for multimodal medical data analysis, in which a reasoning agent dynamically plans an analysis workflow and coordinates specialized models and computational tools. The work will explore existing (medical) agent architectures, implement a prototype system, and evaluate different strategies for planning, tool use, multimodal information integration, and the generation of clinically meaningful outputs.
+    </p>
+  </section>
+
+  <!-- ================= REPLACE FURTHER INFORMATION ================= -->
+  <section class="section">
+    <h2 class="section-title">Further Information:</h2>
+    <ul>
+      <li>
+        Z. Wang et al., “MedAgent-Pro: Towards Evidence-Based Multi-Modal Medical Diagnosis via Reasoning Agentic Workflow,” ICLR, 2026.
+      </li>
+      <li>
+        Y. Du et al., “CARE: Towards Clinical Accountability in Multi-Modal Medical Reasoning with an Evidence-Grounded Agentic Framework,” ICLR, 2026.
+      </li>
+    </ul>
+  </section>
+
+  <div class="bottom-grid">
+
+    <!-- =================== REPLACE QUALIFICATIONS =================== -->
+    <section class="section" style="margin-top:0;">
+      <h2 class="section-title">Qualifications:</h2>
+      <ul>
+        <li>Good Python programming skills and experience with deep learning frameworks such as PyTorch</li>
+        <li>Interest in multimodal AI, AI agents, and medical applications</li>
+        <li>Experience with LLMs/VLMs, tool-using agents, or medical image analysis is advantageous</li>
+      </ul>
+    </section>
+
+    <!-- ====================== REPLACE CONTACT ======================= -->
+    <section class="section contact" style="margin-top:0;">
+      <h2 class="section-title">Contact:</h2>
+
+      <p>
+        <strong>Darko Stern</strong><br>
+        <span>darko.stern@medunigraz.at</span>
+      </p>
+
+      <p>
+        <strong>Martin Urschler</strong><br>
+        <span>martin.urschler@tugraz.at</span>
+      </p>
+    </section>
+
+  </div>
+
+</div>
+</body>
+</html>
